@@ -1,0 +1,6 @@
+<p class="text-right">
+  <span><strong>UpdatedOn : <i>{{(lastUpdate | async)| date: 'mediumTime'}}</i></strong>,</span>
+  <span><strong>Total todos : <i>{{(todos | async).length}}</i></strong></span>
+</p>
+<button class="btn btn-primary" (click)="clearTodos()">Delete All</button>
+
